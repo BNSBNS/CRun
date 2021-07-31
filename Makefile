@@ -1,17 +1,18 @@
-# makefile
-# This is easily understood like here,
-# target target_name : prerequisites 
-# command with tab space
+results: Main.o Newspaper.o Subscribers.o Delivery.o DataStructure.o
+	gcc $^ -o results
 
-# Other way to remember is 
-# food: food items 
-# making food 
+Newspaper.o: Newspaper.c Newspaper.h
+	gcc -c $<
 
-main: Main.o Test1.o Test2.o 
-	gcc -Wall Main.o Test1.o Test2.o -o Main
+Subscribers.o: Subscribers.c Subscribers.h
+	gcc -c $<
 
-# test1.o: test1.h test1.c
-# 	gcc -Wall -c test1.c
+Delivery.o: Delivery.c Delivery.h
+	gcc -c $<
 
-clean: 
-		rm *.o
+DataStructure.o: DataStructure.c DataStructure.h
+	gcc -c $<	
+
+clean:
+	-rm *.o
+	-rm results

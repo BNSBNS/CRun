@@ -1,13 +1,14 @@
 #include <stdio.h>
-#include "Test1.h"
-#include "Test2.h"
+#include <stdlib.h>
+#include "Newspaper.h"
+#include "Subscribers.h"
+#include "Delivery.h"
+#include "DataStructure.h"
 
 int main(void)
 {
-    printf("main");
-    foo();
+    printf("main malloc\n");
 
-    Test2.books b1 ;
 
 
     
