@@ -7,6 +7,9 @@
 #include "Delivery.c"
 #include "DataStructure.h"
 
+int getSum(int a, int b);
+void printSomething();
+
 int main(void)
 {
     printf("main malloc\n");
@@ -16,12 +19,24 @@ int main(void)
 
     del_det_from_c_file.rating = 5;
 
-    printf("%d " , del_det_from_c_file.rating );
+    setBook("test set book");
+    
 
-
-
-
+    /* testers */
+    // printf("%d " , del_det_from_c_file.rating );
+    // printf("%d", getSum(5,3));
+    // printSomething();
 
     printf("exit\n");
     return 0;
+}
+
+int getSum(int a, int b)
+{
+    return a + b;
+}
+
+void printSomething()
+{
+    printf("i am printing something from void");
 }
