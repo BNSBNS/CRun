@@ -1,3 +1,5 @@
+#include <string.h>
+
 typedef struct newspapers {
 
     char name[50];
@@ -8,6 +10,4 @@ typedef struct newspapers {
 
 void addName();
 
-newpaper_details getDetails(){
-    
-}
+newpaper_details getDetails();

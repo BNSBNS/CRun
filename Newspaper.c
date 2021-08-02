@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "Newspaper.h"
+#include <string.h>
 
-
+newpaper_details nd;
 
 void addName(char* name , int p, newpaper_details details){
    
@@ -20,5 +21,5 @@ get get method details
 
 
 newpaper_details getDetail(){
-    return (newpaper_details) ;
+    return nd;
 }
