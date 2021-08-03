@@ -3,6 +3,7 @@
 #include <string.h>
 #include "Newspaper.h"
 #include "Subscribers.h"
+
 #include "Delivery.h"
 #include "Delivery.c"
 #include "DataStructure.h"
@@ -20,7 +21,7 @@ int main(void)
     del_det_from_c_file.rating = 5;
 
     setBook("test set book");
-    
+    printf("title is %s \n", getBooksStruct().title );
 
     /* testers */
     // printf("%d " , del_det_from_c_file.rating );

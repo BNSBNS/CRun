@@ -1,7 +1,15 @@
-struct subbers;
+#include <string.h>
+
+typedef struct subbers
+{
+    char title[30];
+    int number;
+} subbersName;
+
+subbersName sn;
 
 void printBook();
 
-struct subbers setBook();
+void setBook(char temp[30]);
 
-struct subbers getBooks();
+struct subbers getBooksStruct();
