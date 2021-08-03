@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "Subscribers.h"
 
+subbersName sn;
 
 // void setNumber(int num, books b1)
 // {

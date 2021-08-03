@@ -6,7 +6,7 @@ typedef struct subbers
     int number;
 } subbersName;
 
-subbersName sn;
+
 
 void printBook();
 
