@@ -10,7 +10,26 @@ as simple as possible
 uniform way to deal with generic pointers; therefore, we prefix their
 names with an underscore and only use them to initialize local variables with the desired types and with the appropriate names.  
 
+extern use all outside file  
+static use withint file  , also retain value if re called/initialized again  
 
+
+
+
+### refresher notes  
+gcc *.c -o main // compiles all .c files  
+
+auto == local variable  
+
+extern == external variable, even more then global var (ie, 2 diff file)  
+extern must also be declare outside of anything (like global)  
+
+
+
+
+
+
+### udemy  
 
 
 
