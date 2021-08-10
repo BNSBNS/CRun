@@ -13,6 +13,8 @@ names with an underscore and only use them to initialize local variables with th
 extern use all outside file  
 static use withint file  , also retain value if re called/initialized again  
 
+if using math.h need compile with gcc main.c -o ex -lm  
+
 
 
 

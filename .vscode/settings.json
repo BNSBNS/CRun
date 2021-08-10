@@ -2,6 +2,7 @@
     "files.associations": {
         "delivery.h": "c",
         "stdio.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "cmath": "c"
     }
 }
