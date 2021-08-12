@@ -1,27 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <malloc.h>
-#include <math.h>
 
-int convertToDeci(long long n);
+#define MAX 41
 
-int main(void)
+int has_ch(char ch, const char *line);
+
+int main(int argc, char *argv[])
 {
-    long long n;
-    printf("enter num:");
-    scanf("%lld", &n);
-    printf("%lld in bi = %d in deci", n, convertToDeci(n));
+    int n = 0;
+
+    // scanf("%d", &n);
+    scanf("%d", &n);
+    ungetc(n,stdin);
+    scanf("%d", &n);
+    
+    printf("%d", n);
+
     return 0;
-}
-
-
-int convertToDeci(long long n){
-    int decimalNum = 0, i = 0, remainder;
-
-    while(n!=0){
-        remainder = n%10;
-        n/=10;
-        decimalNum += remainder*pow(2,i);
-        ++i;
-    }
-    return decimalNum;
 }
